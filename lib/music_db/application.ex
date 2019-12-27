@@ -7,6 +7,7 @@ defmodule MusicDb.Application do
 
   def start(_type, _args) do
     children = [
+      MusicDb.Repo
       # Starts a worker by calling: MusicDb.Worker.start_link(arg)
       # {MusicDb.Worker, arg}
     ]
