@@ -7,6 +7,7 @@ defmodule MusicDb.Repo.Migrations.CreateTracks do
       add(:duration, :integer)
       add(:index, :integer)
       add(:number_of_plays, :integer)
+      add(:album_id, references(:albums))
 
       timestamps()
     end
